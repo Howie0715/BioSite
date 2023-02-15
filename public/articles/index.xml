@@ -6,12 +6,12 @@
     <description>Recent content in Articles on </description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Surprise Surprise</title>
-      <link>/articles/article/</link>
+      <title>Coding-Midterm</title>
+      <link>/articles/coding-midterm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/articles/article/</guid>
-      <description>Thank you for your support! Hello. If you like this template, I&amp;rsquo;d be happy to get a coffee donation :)</description>
+      <guid>/articles/coding-midterm/</guid>
+      <description>1 我的位置在哪裡 #By Turtle n=int(input()) r=n/12 c=n%12 if c==0: r=r-1 c=12 print(int(r+1),c) 2 韓信點兵 #By Brian for soldier in range(10000, 20001): if (soldier%13==5 and soldier%17==7 and soldier%19==11): print(soldier) </description>
     </item>
     
   </channel>

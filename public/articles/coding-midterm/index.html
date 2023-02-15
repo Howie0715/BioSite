@@ -5,12 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Contact | </title>
+<title>Coding-Midterm | </title>
 <meta name="keywords" content="" />
-<meta name="description" content="Contact - ">
+<meta name="description" content="1 我的位置在哪裡 #By Turtle n=int(input()) r=n/12 c=n%12 if c==0: r=r-1 c=12 print(int(r&#43;1),c) 2 韓信點兵 #By Brian for soldier in range(10000, 20001): if (soldier%13==5 and soldier%17==7 and soldier%19==11): print(soldier) ">
 <meta name="author" content="Howie">
-<link rel="canonical" href="/contact/" />
+<link rel="canonical" href="/articles/coding-midterm/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.7bfe087ae72df31787ec7a1360dd05ee246a179b51cf7a30a904b39d7f813b69.css" integrity="sha256-e/4Ieuct8xeH7HoTYN0F7iRqF5tRz3owqQSznX&#43;BO2k=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="/images/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -18,7 +20,6 @@
 <link rel="mask-icon" href="/images/apple-touch-icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/contact/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,7 +59,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -112,16 +113,67 @@
             </li>
             <li>
                 <a href="/contact/" title="Contact">
-                    <span class="active">Contact</span>
+                    <span>Contact</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="">Home</a></div>
-  <h1>Contact</h1>
-</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="">Home</a>&nbsp;»&nbsp;<a href="/articles/">Articles</a></div>
+    <h1 class="post-title">
+      Coding-Midterm
+    </h1>
+    <div class="post-meta">1 min&nbsp;·&nbsp;Howie</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#1-%e6%88%91%e7%9a%84%e4%bd%8d%e7%bd%ae%e5%9c%a8%e5%93%aa%e8%a3%a1" aria-label="1 我的位置在哪裡">1 我的位置在哪裡</a></li>
+                <li>
+                    <a href="#2-%e9%9f%93%e4%bf%a1%e9%bb%9e%e5%85%b5" aria-label="2 韓信點兵">2 韓信點兵</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+  <h1 id="1-我的位置在哪裡">1 我的位置在哪裡</h1>
+<pre tabindex="0"><code>#By Turtle
+
+n=int(input())
+r=n/12
+c=n%12
+if c==0:
+  r=r-1
+  c=12
+print(int(r+1),c)
+</code></pre><h1 id="2-韓信點兵">2 韓信點兵</h1>
+<pre tabindex="0"><code>#By Brian
+
+for soldier in range(10000, 20001):
+  if (soldier%13==5 and soldier%17==7 and soldier%19==11):
+    print(soldier)
+</code></pre>
+  </div>
+
+  <footer class="post-footer">
+
+<div class="share-buttons">
+
+
+</div>
+
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
@@ -188,6 +240,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 
