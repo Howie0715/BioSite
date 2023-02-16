@@ -1,4 +1,4 @@
 ---
 title: Projects
 ---
-This is the projects list page.
+Nobody know how will they develop 🤞
