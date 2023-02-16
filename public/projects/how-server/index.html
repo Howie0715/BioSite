@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>How Server | iehow</title>
+<meta name="keywords" content="" />
+<meta name="description" content="It&#39;s a Minecraft Server (maybe snapshot?)">
+<meta name="author" content="Howie">
+<link rel="canonical" href="/projects/how-server/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.7bfe087ae72df31787ec7a1360dd05ee246a179b51cf7a30a904b39d7f813b69.css" integrity="sha256-e/4Ieuct8xeH7HoTYN0F7iRqF5tRz3owqQSznX&#43;BO2k=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/images/icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="/bio/" title="Bio">
+                    <span>Bio</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="">Home</a>&nbsp;»&nbsp;<a href="/projects/">Projects</a></div>
+    <h1 class="post-title">
+      How Server
+    </h1>
+    <div class="post-description">
+      It&#39;s a Minecraft Server (maybe snapshot?)
+    </div>
+    <div class="post-meta">1 min&nbsp;·&nbsp;Howie</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#back-end" aria-label="back-end">back-end</a><ul>
+                        
+                <li>
+                    <a href="#software" aria-label="Software">Software</a><ul>
+                        
+                <li>
+                    <a href="#server" aria-label="Server">Server</a></li>
+                <li>
+                    <a href="#nas" aria-label="Nas">Nas</a></li></ul>
+                </li>
+                <li>
+                    <a href="#hardware" aria-label="Hardware">Hardware</a><ul>
+                        
+                <li>
+                    <a href="#server-1" aria-label="Server">Server</a></li>
+                <li>
+                    <a href="#nas-1" aria-label="Nas">Nas</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#front-end" aria-label="front-end">front-end</a><ul>
+                        
+                <li>
+                    <a href="#-%e9%80%b2%e5%85%a5%e4%bc%ba%e6%9c%8d%e5%99%a8" aria-label="✅ 進入伺服器">✅ 進入伺服器</a><ul>
+                        
+                <li>
+                    <a href="#%e7%89%88%e6%9c%ac-1193-server-ipmciehowtw%e9%80%b2%e5%85%a5discordhttpsdiscordggmhef42xbvu" aria-label="版本 1.19.3 Server-IP：mc.iehow.tw｜進入Discord">版本 1.19.3 Server-IP：<code>mc.iehow.tw</code>｜<a href="https://discord.gg/mHef42xbVu">進入Discord</a></a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%bc%ba%e6%9c%8d%e8%a6%8f%e5%89%87" aria-label="伺服規則">伺服規則</a></li>
+                <li>
+                    <a href="#%e9%81%8a%e7%8e%a9%e9%a0%88%e7%9f%a5" aria-label="遊玩須知">遊玩須知</a></li>
+                <li>
+                    <a href="#%e6%8c%87%e4%bb%a4%e4%bb%8b%e7%b4%b9" aria-label="指令介紹">指令介紹</a><ul>
+                        
+                <li>
+                    <a href="#%e7%89%b9%e6%ae%8a%e5%8a%9f%e8%83%bd" aria-label="特殊功能">特殊功能</a></li>
+                <li>
+                    <a href="#%e5%9f%ba%e6%9c%ac%e6%8c%87%e4%bb%a4" aria-label="基本指令">基本指令</a><ul>
+                        
+                <li>
+                    <a href="#%e7%8e%a9%e5%ae%b6%e4%ba%92%e5%82%b3" aria-label="玩家互傳">玩家互傳</a></li>
+                <li>
+                    <a href="#%e5%82%b3%e9%bb%9e%e8%a8%ad%e5%ae%9a" aria-label="傳點設定">傳點設定</a></li>
+                <li>
+                    <a href="#%e5%85%b6%e4%bb%96%e6%8c%87%e4%bb%a4" aria-label="其他指令">其他指令</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e9%a0%98%e5%9c%b0%e6%95%99%e5%ad%b8" aria-label="領地教學">領地教學</a><ul>
+                        
+                <li>
+                    <a href="#%e6%a0%b8%e5%bf%83%e4%bd%bf%e7%94%a8%e4%bb%8b%e7%b4%b9" aria-label="核心使用介紹">核心使用介紹</a></li>
+                <li>
+                    <a href="#%e6%a0%b8%e5%bf%83%e8%a3%bd%e4%bd%9c%e5%8d%87%e7%b4%9a%e4%bb%8b%e7%b4%b9" aria-label="核心製作、升級介紹">核心製作、升級介紹</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%bc%ba%e6%9c%8dfaq" aria-label="伺服FAQ">伺服FAQ</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+  <h1 id="back-end">back-end</h1>
+<h2 id="software">Software</h2>
+<h3 id="server">Server</h3>
+<ul>
+<li>Core
+<ul>
+<li><a href="https://www.oracle.com/tw/java/technologies/downloads/">Java build 18.0.2+9-61</a></li>
+<li><a href="https://github.com/FabricMC/fabric-loader">fabric-server-mc.1.19.3-loader.0.14.14-launcher.0.11.1</a></li>
+<li><a href="https://www.minecraft.net/zh-hant/download/server">minecraft_server.1.19.3</a></li>
+</ul>
+</li>
+<li>Plugin
+<ul>
+<li><a href="https://github.com/FabricMC/fabric">fabric-api</a></li>
+<li><a href="https://github.com/FabricMC/fabric-language-kotlin">fabric-language-kotlin</a></li>
+<li>optimize
+<ul>
+<li><a href="https://github.com/SpaceWalkerRS/alternate-current">alternate-current</a></li>
+<li><a href="https://github.com/RelativityMC/C2ME-fabric">c2me-fabric</a></li>
+<li><a href="https://github.com/fxmorin/carpet-fixes">carpet-fixes</a></li>
+<li><a href="https://github.com/gnembon/fabric-carpet">fabric-carpet</a></li>
+<li><a href="https://github.com/malte0811/FerriteCore">ferritecore</a></li>
+<li><a href="https://github.com/astei/krypton">krypton</a></li>
+<li><a href="https://github.com/CaffeineMC/lithium-fabric">lithium-fabric</a></li>
+<li><a href="https://github.com/PaperMC/Starlight">starlight</a></li>
+</ul>
+</li>
+<li>function
+<ul>
+<li><a href="https://github.com/Patbox/ArmorStandEditor">armor-stand-editor</a></li>
+<li><a href="https://github.com/John-Paul-R/Essential-Commands">essential_commands</a></li>
+<li><a href="https://github.com/fill1890/FabSit">fabsit</a></li>
+<li><a href="https://github.com/Patbox/get-off-my-lawn-reserved">goml</a></li>
+<li><a href="https://github.com/Patbox/Holograms">holograms</a></li>
+<li><a href="https://github.com/PotatoPresident/InvView">InvView</a></li>
+<li><a href="https://github.com/QuiltServerTools/Ledger">ledger</a></li>
+<li><a href="https://github.com/LuckPerms/LuckPerms">LuckPerms-Fabric</a></li>
+<li><a href="https://github.com/Xujiayao/MCDiscordChat">MCDiscordChat</a></li>
+<li><a href="https://github.com/jpenilla/MiniMOTD">minimotd-fabric</a></li>
+<li><a href="https://github.com/plan-player-analytics/Plan">PlanFabric</a></li>
+<li><a href="https://github.com/WerDei/Server-Hats">server-hats</a></li>
+<li><a href="https://github.com/Patbox/StyledPlayerList">styledplayerlist</a></li>
+<li><a href="https://github.com/EngineHub/WorldEdit">worldedit-mod</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="nas">Nas</h3>
+<ul>
+<li>Backup-System：<a href="https://www.synology.com/zh-tw/dsm/feature/active-backup-business/pc">Active Backupfor Business</a></li>
+<li>DNS-Server：<a href="https://github.com/AdguardTeam/AdGuardHome">AdguardTeam/AdGuardHome</a></li>
+</ul>
+<h2 id="hardware">Hardware</h2>
+<h3 id="server-1">Server</h3>
+<ul>
+<li>CPU：<a href="https://www.intel.com.tw/content/www/tw/zh/products/sku/97128/intel-core-i77700-processor-8m-cache-up-to-4-20-ghz/specifications.html">Intel® Core™ i7-7700</a></li>
+<li>RAM：24GB</li>
+<li>SSD：512GB</li>
+</ul>
+<h3 id="nas-1">Nas</h3>
+<ul>
+<li>Model：<a href="https://www.synology.com/zh-tw/products/DS220+">Synology DS220+</a></li>
+<li>RAM：2GB</li>
+<li>Stroage：4TB*2 (SHR)</li>
+</ul>
+<h1 id="front-end">front-end</h1>
+<h2 id="-進入伺服器">✅ 進入伺服器</h2>
+<h3 id="版本-1193-server-ipmciehowtw進入discordhttpsdiscordggmhef42xbvu">版本 1.19.3 Server-IP：<code>mc.iehow.tw</code>｜<a href="https://discord.gg/mHef42xbVu">進入Discord</a></h3>
+<h2 id="伺服規則">伺服規則</h2>
+<blockquote>
+<p>Feb 16, 2023 Revise 我服保有最終解釋權</p>
+</blockquote>
+<ol>
+<li>禁止破壞、奪取他人所有物</li>
+<li>禁止以任何形式針對特定人(種)進行攻擊、騷擾</li>
+<li>禁止使用外掛、遊戲漏洞改變遊戲行為</li>
+<li>確保農場、紅石設施不致使伺服器卡頓</li>
+</ol>
+<h2 id="遊玩須知">遊玩須知</h2>
+<ol>
+<li>若服主有重大事務，伺服器將會進入休服，將會以公告提醒各位玩家</li>
+<li>本伺服器有安裝防透視插件，如遇偽礦物在面前消失的問題係屬正常現象</li>
+<li>伺服器將會有遊戲票券可兌換裝備、物品，可提供玩家自行交易</li>
+<li>如遇不服管理階層的判決，可以聯繫服主出面協調</li>
+</ol>
+<h2 id="指令介紹">指令介紹</h2>
+<h3 id="特殊功能">特殊功能</h3>
+<p>🎩 可以將任何東西戴在頭上，直接在物品欄配置即可
+💺 右鍵點擊半磚、階梯可以坐下</p>
+<h3 id="基本指令">基本指令</h3>
+<h4 id="玩家互傳">玩家互傳</h4>
+<ol>
+<li><code>/tpa &lt;ID&gt;</code>  請求傳送到該玩家身邊</li>
+<li><code>/tpahere &lt;ID&gt;</code>  請求該玩家傳送到身邊</li>
+</ol>
+<h4 id="傳點設定">傳點設定</h4>
+<ol>
+<li><code>/home set &lt;家名稱&gt;</code>  設置傳送點 <code>(home點最多5個)</code></li>
+<li><code>/home tp &lt;家名稱&gt;</code> 傳送至該點</li>
+<li><code>/home delete &lt;家名稱&gt;</code>  刪除該點</li>
+<li><code>/home list</code>  顯示已設置的傳點</li>
+</ol>
+<h4 id="其他指令">其他指令</h4>
+<ol>
+<li><code>/back</code>  回到上一個位置</li>
+<li><code>/spawn</code>  回到重生點</li>
+<li><code>/warp tp &lt;目的名稱&gt;</code> (目前僅作為官方傳點)</li>
+<li><code>/afk</code> 暫離</li>
+<li><code>/gametime</code> 世界目前時間</li>
+</ol>
+<h3 id="領地教學">領地教學</h3>
+<p>🚨 劃設領地前，建議戴上領地眼鏡，注意四周是否有他人領地，避免後續擴充重疊</p>
+<p>📌 領地採用核心方式設置（一人在每一維度只能擁有一顆核心），擴充功能可以自行在合成表中探索:D</p>
+<h4 id="核心使用介紹">核心使用介紹</h4>
+<ol>
+<li>放置核心後，右鍵點擊核心調整設定</li>
+<li>依照核心等級對應半徑產生領地範圍（正方形）</li>
+<li>擴充功能需緊鄰核心放置</li>
+</ol>
+<p><img loading="lazy" src="https://i.imgur.com/23CTUmH.png" alt=""  />
+</p>
+<h4 id="核心製作升級介紹">核心製作、升級介紹</h4>
+<p><img loading="lazy" src="https://i.imgur.com/u2OChTH.png" alt=""  />
+
+<img loading="lazy" src="https://i.imgur.com/1TWXtwg.png" alt=""  />
+</p>
+<h2 id="伺服faq">伺服FAQ</h2>
+<p>👋 嗨大家！我是How服器的架設者，從14歲開始架設伺服器至今年即將邁入第五年，過去從私服到校服接著快照服再有目前的How服器，每個階段都是從0開始招生，但偶爾也會有前一階段的玩家發現我開了新服並且加入，很高興能再次遇見大家，也感謝新加入的玩家們！</p>
+<p>以下分為兩部分呈現過去跟未來會被問到的問題（陸續補充），希望能夠一文以蔽之</p>
+<blockquote>
+<p>關於各種卷</p>
+</blockquote>
+<ol>
+<li>常駐卷可以換的東西太少/常駐卷很難得到
+常住卷原先設計是為了鼓勵玩家多加參與伺服活動，且不可以成為伺服器的必要元素，目的是希望玩家可以多加探索世界，增加遊戲體驗，有仔細查看匯率的玩家應該有發現，兌換常駐卷的方式都需要您親自走訪世界，沒辦法定點掛機取得</li>
+<li>遊戲分流卷
+遊戲分流卷未來會在遊戲分流發行，僅能透過參與伺服遊戲獲得、持有，未來商城也會有需要該卷的物品供大家兌換，會在遊戲分流結帳、主分流取貨，因此參加玩遊戲請記得把卷放入遊戲分流的終界箱中，以免遺失！</li>
+</ol>
+<blockquote>
+<p>關於伺服營運</p>
+</blockquote>
+<ol>
+<li>開學後是否繼續運作？
+由於玩家組成有很大一部分是學生，也就意味著開學後人數會急劇下降，而伺服方目前規劃開學後繼續維持運作，除非學期中遊玩人數不甚理想，才會研擬至暑假才開服（不刪檔案）</li>
+<li>伺服器何時收場？
+參與過快照服的玩家可能還還記得“閉服式”，這類慘劇未來不免再次上演，因此只能跟各位保證，若無重大變故，伺服器就會盡可能營運，希望玩家可以放心遊玩:D</li>
+</ol>
+<p>以上若有其他疑問、建議歡迎私訊～</p>
+<p>最後，敝人迄今未滿20，不要再臆測更老的年紀了plz</p>
+
+  </div>
+
+  <footer class="post-footer">
+
+<div class="share-buttons">
+
+
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span> Copyright ©2023 iehow
+      
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
