@@ -80,7 +80,7 @@ params:
 
     # change favicon in images folder (icon for web tab)
     assets:
-          favicon: "/images/favicon.ico"
+          favicon: "/images/icon.png"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
