@@ -3,12 +3,10 @@ title: iehow
 paginate: 5
 theme: charlolamode
 
-
-
 menu:
     main:
-        - name: About
-          url: /about/
+        - name: Bio
+          url: /bio/
           weight: 30
         - name: Articles
           url: /articles/
@@ -17,19 +15,9 @@ menu:
           url: /projects/
           weight: 15
 
-     # - name: Categories
-        #   url: /categories/
-        #   weight: 10
-        # - name: new Tab
-        #   url: /newtab/
-        #   weight: defines order of tabs
-   
-
 
 params:
     author: Howie
-
-
     defaultTheme: auto
     # disableThemeToggle: true
     ShowShareButtons: true
@@ -55,6 +43,7 @@ params:
         buttons:
             - name: Don't click me 🤭
               url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
     mainSections:
       - articles
 
@@ -69,14 +58,6 @@ params:
           url: "https://twitter.com/Howie_0715"
         - name: youtube
           url: "https://www.youtube.com/@howie0715"
-      # add more social icons. find more in svg.html file
-      # - name: youtube
-      #   url: yoururl
-      # - name: twitter
-      #   url: yoururl
-      # - name: facebook
-      #   url: yoururl
-
 
     # change favicon in images folder (icon for web tab)
     assets:
