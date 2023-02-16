@@ -22,20 +22,20 @@ image: ""
     * [carpet-fixes](https://github.com/fxmorin/carpet-fixes)
     * [fabric-carpet](https://github.com/gnembon/fabric-carpet)
     * [ferritecore](https://github.com/malte0811/FerriteCore)
-    * [krypton](https://github.com/astei/krypton)
+    * ~~[krypton](https://github.com/astei/krypton)~~
     * [lithium-fabric](https://github.com/CaffeineMC/lithium-fabric)
     * [starlight](https://github.com/PaperMC/Starlight)
   * function
-    * [armor-stand-editor](https://github.com/Patbox/ArmorStandEditor)
+    * ~~[armor-stand-editor](https://github.com/Patbox/ArmorStandEditor)~~
     * [essential_commands](https://github.com/John-Paul-R/Essential-Commands)
-    * [fabsit](https://github.com/fill1890/FabSit)
+    * ~~[fabsit](https://github.com/fill1890/FabSit)~~
     * [goml](https://github.com/Patbox/get-off-my-lawn-reserved)
     * [holograms](https://github.com/Patbox/Holograms)
     * [InvView](https://github.com/PotatoPresident/InvView)
     * [ledger](https://github.com/QuiltServerTools/Ledger)
     * [LuckPerms-Fabric](https://github.com/LuckPerms/LuckPerms)
     * [MCDiscordChat](https://github.com/Xujiayao/MCDiscordChat)
-    * [minimotd-fabric](https://github.com/jpenilla/MiniMOTD)
+    * ~~[minimotd-fabric](https://github.com/jpenilla/MiniMOTD)~~
     * [PlanFabric](https://github.com/plan-player-analytics/Plan)
     * [server-hats](https://github.com/WerDei/Server-Hats)
     * [styledplayerlist](https://github.com/Patbox/StyledPlayerList)
