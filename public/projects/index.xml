@@ -4,15 +4,8 @@
     <title>Projects on </title>
     <link>/projects/</link>
     <description>Recent content in Projects on </description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How Server</title>
-      <link>/projects/how-server/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/how-server/</guid>
-      <description>back-end Software Server Core Java build 18.0.2+9-61 fabric-server-mc.1.19.3-loader.0.14.14-launcher.0.11.1 minecraft_server.1.19.3 Plugin fabric-api fabric-language-kotlin optimize alternate-current c2me-fabric carpet-fixes fabric-carpet ferritecore krypton lithium-fabric starlight function armor-stand-editor essential_commands fabsit goml holograms InvView ledger LuckPerms-Fabric MCDiscordChat minimotd-fabric PlanFabric server-hats styledplayerlist worldedit-mod Nas Backup-System：Active Backupfor Business DNS-Server：AdguardTeam/AdGuardHome Hardware Server CPU：Intel® Core™ i7-7700 RAM：24GB SSD：512GB Nas Model：Synology DS220+ RAM：2GB Stroage：4TB*2 (SHR) </description>
-    </item>
-    
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

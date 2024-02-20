@@ -1,5 +1,5 @@
-baseURL: https://design.iehow.tw/ # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: iehow
+baseURL: https://iehow.tw/ # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: 
 paginate: 5
 theme: charlolamode
 
@@ -17,11 +17,11 @@ menu:
 
 
 params:
-    author: Howie
+    author: 
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
-    ShowReadingTime: true
+    ShowShareButtons: false
+    ShowReadingTime: false
     displayFullLangName: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
@@ -36,8 +36,8 @@ params:
           Hello, I'm a Computer Science student from Taiwan.
 
           Also a Minecraft Server owner.
-        imageUrl: "/images/profile.gif"
-        imageTitle: my image
+        imageUrl: "/images/profile.webp"
+        imageTitle: avator
         # imageWidth: 120
         # imageHeight: 120
         buttons:
